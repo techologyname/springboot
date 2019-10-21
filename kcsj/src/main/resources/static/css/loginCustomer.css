@@ -1,0 +1,44 @@
+/* 
+h2 {
+	font-size: 40px;
+	text-align: center;
+}
+
+#L_StaticForm {
+	background-color: gainsboro;
+	border: 1px solid aliceblue;
+	text-align: center;
+	width: 330px;
+	padding: 50px 50px;
+	position: absolute;
+	left: 35%;
+	top: 35%;
+	
+}
+
+#L_StaticForm td {
+	font-size: 18px;
+}
+
+#L_StaticForm thead input {
+	height: 20px;
+	border: 1px solid aliceblue;
+	color: darkgray;
+	width: 150px;
+}
+
+.cols2 input {
+	margin-left: 60px;
+	text-align: center;
+	color: black;
+	font-size: 16px;
+	border: 1px solid azure;
+	padding: 5px 10px;
+	border-radius: 10px;
+	background-color: lightgreen;
+}
+
+.radio {
+	text-align: center;
+	margin-bottom: 10px;
+} */

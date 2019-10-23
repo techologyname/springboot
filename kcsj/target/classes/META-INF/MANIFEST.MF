@@ -1,11 +1,10 @@
 Manifest-Version: 1.0
 Built-By: xie
 Build-Jdk: 9.0.4
-Implementation-Title: 12-spring-boot-springmvc-mybatis
+Implementation-Title: kcsj
 Implementation-Version: 0.0.1-SNAPSHOT
-Implementation-Vendor-Id: com.sxt
+Implementation-Vendor-Id: com.xj
 Implementation-Vendor: Pivotal Software, Inc.
-Implementation-URL: http://projects.spring.io/spring-boot/12-spring-bo
- ot-springmvc-mybatis/
+Implementation-URL: http://projects.spring.io/spring-boot/kcsj/
 Created-By: Maven Integration for Eclipse
 

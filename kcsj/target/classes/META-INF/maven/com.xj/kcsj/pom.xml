@@ -5,8 +5,8 @@
     <artifactId>spring-boot-starter-parent</artifactId>
     <version>1.5.10.RELEASE</version>
   </parent>
-  <groupId>com.sxt</groupId>
-  <artifactId>12-spring-boot-springmvc-mybatis</artifactId>
+  <groupId>com.xj</groupId>
+  <artifactId>kcsj</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <description>	</description>
   <properties>

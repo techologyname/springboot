@@ -1,22 +1,23 @@
 package com.xj.pojo;
-
+	/*收货地址表*/
 public class Receiver_address {
 	private Integer id;
-    private Integer user_id;
+    private long user_id;
     private String receive_name;
     private String three_address;
     private String other_address;
-    private Integer tel;
+    private String tel;
+    private String address_name;
 	public Integer getId() {
 		return id;
 	}
 	public void setId(Integer id) {
 		this.id = id;
 	}
-	public Integer getUser_id() {
+	public long getUser_id() {
 		return user_id;
 	}
-	public void setUser_id(Integer user_id) {
+	public void setUser_id(long user_id) {
 		this.user_id = user_id;
 	}
 	public String getReceive_name() {
@@ -37,11 +38,19 @@ public class Receiver_address {
 	public void setOther_address(String other_address) {
 		this.other_address = other_address;
 	}
-	public Integer getTel() {
+	public String getTel() {
 		return tel;
 	}
-	public void setTel(Integer tel) {
+	public void setTel(String tel) {
 		this.tel = tel;
 	}
+	public String getAddress_name() {
+		return address_name;
+	}
+	public void setAddress_name(String address_name) {
+		this.address_name = address_name;
+	}
+    
+	
 	
 }

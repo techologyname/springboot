@@ -8,16 +8,18 @@ import com.xj.pojo.Commodity;
 import com.xj.pojo.ShoppingCartItem;
 
 public class ShoppingCart {
-	
+	private long id;
+	private long user_id;
+	private float countprice;
 	private Map<Integer, ShoppingCartItem> commoditys = new HashMap<>();
 	
 	/**
 	 * 修改指定购物项的数量
 	 */
-	public void updateItemQuantity(Integer id, int quantity){
+	public void updateItemCommnumber(Integer id, int commnumber){
 		ShoppingCartItem sci =commoditys.get(id);
 		if(sci != null){
-			sci.setQuantity(quantity);
+			sci.setCommnumber(commnumber);
 		}
 	}
 	
@@ -48,11 +50,11 @@ public class ShoppingCart {
 	 * 获取购物车中所有的商品的总的钱数
 	 * @return
 	 */
-	public float getTotalMoney(){
+	public float getCountprice(){
 		float total = 0;
 		
 		for(ShoppingCartItem sci: getItems()){
-			total += sci.getItemMoney();
+			total += sci.getSubtotalprice();
 		}
 		
 		return total;
@@ -74,7 +76,7 @@ public class ShoppingCart {
 		int total = 0;
 		
 		for(ShoppingCartItem sci: commoditys.values()){
-			total += sci.getQuantity();
+			total += sci.getCommnumber();
 		}
 		
 		return total;
@@ -108,5 +110,21 @@ public class ShoppingCart {
 		}else{
 			sci.increment();
 		}
+	}
+
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public long getUser_id() {
+		return user_id;
+	}
+
+	public void setUser_id(long user_id) {
+		this.user_id = user_id;
 	}
 }

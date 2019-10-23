@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+
 <!doctype html>
 <html>
 
@@ -24,12 +23,12 @@ body {
 			<!-- 头部提示信息 -->
 			<div class="logD logDtip">
 				<p class="p1">用户登录</p>
-				<span class="msg">${msg}</span>
+				<!-- <span class="msg">${msg}</span> -->
 			</div>
 			<!-- 输入框 -->
-			<form action="doLogin">
+			<form th:action="@{login}" method="post">
 				<div class="lgD">
-					<input type="text" placeholder="输入用户名" name="uname" />
+					<input type="text" placeholder="输入用户名" name="username" />
 				</div>
 				<div class="lgD">
 					<input type="password" placeholder="输入用户密码" name="password" />
